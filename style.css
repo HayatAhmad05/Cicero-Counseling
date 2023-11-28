@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+   }
+   
+   a {
+    text-decoration: none;
+    color: black;
+   } 
+   
+   #down {
+    margin-top: 20%;
+    padding-bottom: 25%;
+   } 
+   body {
+    background-color: #edede7; /* Set to the desired color */
+    margin: 0;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.header{
+    min-height: 90vh;
+    width: 100%;
+    background-color: #edede7;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    font-size: 40PX;
+    font-family: jost;
+    padding-top: 90px;
+}
+
+
+
+
+
+
+/* NAVIGATIONS */
+
+#name {
+    font-weight: 600;
+    margin-left: -70px;
+    margin-top: -20px;
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Adjust the color of the text */
+}
+#name:hover .subtitle {
+    display: inline;
+}
+#name::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000; /* Adjust the color of the line */
+    transition: width 0.3s; /* Adjust the transition duration as needed */
+}
+
+
+#name:hover::after {
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    padding: 0% 3%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -140px;
+}
+.brand-container{
+    display: flex;
+    align-items: center;
+    margin-left: -0px;
+}
+nav img{
+    width: 300px;
+    height: 300px;
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px; /* Adjust the horizontal padding as needed */
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #101726;
+    text-decoration: wavy;
+    font-size: 25px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6b6362;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+
+
+
+
+
+
+
+
+/* intro page animations */
+
+
+.intro-page {
+    height: 650px; /* Set the specific height for the intro page */
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.intro-page .sentence {
+    font-size: 200px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sentence h4 {
+    font-size: 300px;
+    color: #000;
+    margin: 0;
+    line-height: 1;
+}
+
+.sentence {
+    color: #000000;
+    font-size: 300px;
+    text-align: center;
+    margin-left: 90px;
+    position: relative;
+}
+
+.sentence::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 6px;
+    width: 14px;
+    height: 2px;
+    background-color: #000000;
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+/* MAIN BODY */
+
+.main-body {
+    min-height: 50vh;
+    background-color: #edede7;
+    color: #030303; /* Add a color for the text inside .main-body */
+}
+.main-body h1{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 150px;
+    font-size:50PX;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* uni images */
+
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin: 0;
+}
+
+.image-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display the list items in a horizontal row */
+    animation: carousel 180s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.image-list li {
+    margin-right: 20px; /* Adjust spacing between images */
+}
+
+.image-list img {
+    width: 300px; /* Adjust the width of the images as needed */
+    height: auto; /* Maintain the aspect ratio */
+    border: px solid #ddd; /* Optional border */
+    border-radius: 5px; /* Optional border radius */
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* footer */
+
+
+.footer {
+    bottom: 10px; /* Add a unit, e.g., px */
+    width: 100%;
+    background-color: #edede7;
+    text-align: center;
+    z-index: 999;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.footer h4 {
+    font-weight: 600;
+    color: #000;
+}

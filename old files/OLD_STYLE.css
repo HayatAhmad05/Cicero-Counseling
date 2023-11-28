@@ -1,0 +1,333 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+   }
+   
+   a {
+    text-decoration: none;
+    color: black;
+   } 
+   
+   #down {
+    margin-top: 20%;
+    padding-bottom: 25%;
+   } 
+   body {
+    background-color: #edede7; /* Set to the desired color */
+    margin: 0;
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Rest of your existing CSS styles */
+
+.header{
+    min-height: 90vh;
+    width: 100%;
+    background-color: #edede7;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    font-size: 40PX;
+    font-family: jost;
+    padding-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+.Offers {
+    min-height: 150vh;
+    width: 100%;
+    background-color: #edede7;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    color: #000;
+
+}
+.Offers .text-box {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+
+.Offers .text-box h2{
+    font-size: 150px;
+    color: #000;
+    margin: 0;
+    line-height: 1;
+    text-align: left;
+    padding-left: 60PX;
+    padding-top: 50px;
+}
+.Offers .text-box h2{
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    color: #000; /* Adjust the color of the text */
+    font-size: 150px;
+}
+.Offers .text-box h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s; /* Adjust the transition duration as needed */
+}
+
+.text-box h2:hover::after {
+    width: 42%;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    color: #000;
+    margin-top: 1000px;
+    align-items: baseline;
+}
+
+
+
+
+#name {
+    font-weight: 600;
+    margin-left: -70px;
+    margin-top: -20px;
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Adjust the color of the text */
+}
+#name:hover .subtitle {
+    display: inline;
+}
+#name::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000; /* Adjust the color of the line */
+    transition: width 0.3s; /* Adjust the transition duration as needed */
+}
+
+
+#name:hover::after {
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    padding: 0% 1%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -140px;
+}
+.brand-container{
+    display: flex;
+    align-items: center;
+    margin-left: -0px;
+}
+nav img{
+    width: 300px;
+    height: 300px;
+    margin-left: -0px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px; /* Adjust the horizontal padding as needed */
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #101726;
+    text-decoration: wavy;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6b6362;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+
+/*------TEXT BOX------*/
+
+.text-box {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.text-box a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    animation: morphAnimation 1.5s forwards;
+}
+
+
+.text-box .morph-text h4,
+.text-box .morph-text h1 {
+    font-size: 150px;
+    color: #000;
+    margin: 0;
+    line-height: 1;
+}
+
+.text-box .morph-text h4 {
+    margin-left: -7px;
+}
+
+.text-box .morph-text h1{
+    margin-bottom: 20px;
+}
+
+
+
+/*------buttons-------*/
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 30px;
+    }
+    .text-box p {
+        margin: 10px 0 40px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px; /* Specify a unit, e.g., 10px */
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+
+/*----------------Footer---------------------*/
+
+.footer {
+    bottom: 10px; /* Add a unit, e.g., px */
+    width: 100%;
+    background-color: #edede7;
+    text-align: center;
+    z-index: 999;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+
+.image-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display the list items in a horizontal row */
+}
+
+.image-list li {
+    margin-right: 20px; /* Adjust spacing between images */
+    padding-left: 30px;
+}
+
+/* Optional: Add styling for the images */
+.image-list img {
+    width: 300px; /* Adjust the width of the images as needed */
+    height: auto; /* Maintain the aspect ratio */
+    border: px solid #ddd; /* Optional border */
+    border-radius: 5px; /* Optional border radius */
+}
+
+
+
+
+

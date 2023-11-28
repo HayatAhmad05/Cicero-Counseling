@@ -1,0 +1,32 @@
+   <section class="Offers">
+        <div class="text-box">
+            <h2>COUNTRIES</h2>
+        </div>
+        <div class="container">
+            <div class="image">
+              <img src="USA.png" width="400"/>
+            </div>
+            <div class="image">
+              <img src="UK.png" width="400"/>
+            </div>
+            <div class="image">
+              <img src="canada.png" width="400"/>
+            </div>
+            <div class="image">
+              <img src="PAK.png" width="400" />
+            </div>
+          </div>
+
+
+    </section>
+
+
+
+
+<div class="text-box" id="morph-text">
+                <a class="morph-text">
+                    <h4>THE</h4>
+                    <h1>CICERO WAY</h1>
+                </a>
+                
+            </div>
